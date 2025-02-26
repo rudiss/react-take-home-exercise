@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "jest",
+      "@testing-library/jest-dom"
+    ]
+  }
+}

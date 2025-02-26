@@ -1,17 +1,19 @@
 import React from "react";
+import TaskManager from "./components/TaskManeger/TaskManager";
 
-import TaskManager from "./components/TaskManager";
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <header className="text-center mb-4">
-        <h1 className="text-3xl font-bold">Task Manager</h1>
-      </header>
-
-      <TaskManager />
+    <div className="bg-[var(--white)] min-h-screen">
+      <div className="flex items-center justify-between p-4 bg-[var(--black)] text-[var(--white)]">
+        <h1 className="text-xl font-bold">Todo List</h1>
+      </div>
+      <div className="max-w-2xl mx-auto">
+        <TaskManager />
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+
+
+export default React.memo(App);
